@@ -1,0 +1,73 @@
+.destaques{
+	background-color: var(--azul-claro);
+
+	padding-top:2.5rem;
+	padding-bottom: 2rem;
+}
+
+.destaques__titulo{
+	color:var(--cinza-escuro);
+	font-weight: 700;
+	font-size:1.5rem;
+	font-family: var(--montserrat);
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-bottom: 2rem;
+}
+
+.destaques__painel{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+
+	margin-bottom: 2rem;
+}
+
+.destaques__painel-imagem{
+	
+	/*
+	width:100%;
+
+	isso significa ocupar 100% de espaço disponível 
+	para essa imagem. 
+	Se formos inspecionar aqui o “container”, que é a 
+	seção de “destaques”, olhe só, tem toda essa parte 
+	verde em volta e essa parte verde representa o “padding”. 
+	Então a imagem está ocupando 100% de espaço, só que 
+	não é 100% da tela, porque tem um “padding” que impede 
+	que a imagem cresça mais.
+	*/
+
+	width:100vw;
+
+	/* “vw” quer dizer “viewport width”
+
+	usa uma outra unidade de medida que utiliza 
+	o “viewport” como uma referência
+
+	Neste caso a largura vai ocupar 100% da tela.
+	
+	*/
+
+	max-width: 600px;
+
+	box-shadow: 0 2px 10px 5px #00000020;
+
+	margin-bottom:.5rem;
+}
+
+.destaques__painel-texto{
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: normal;/*altura da linha*/
+}
+
+.destaques__botao{
+	color:var(--vermelho-forte);
+	
+	border-color: var(--vermelho-forte);
+	/*para mudar a cor da borda atribuída no CSS base*/
+
+	margin:0 auto;
+}
